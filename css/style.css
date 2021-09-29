@@ -26,6 +26,9 @@ body{
     display: inline;
     float: left;
 }
+.contact-container a{
+    font-size: 8pt;
+}
 .contact-container .contacts span{
     margin-right: 10px;
 }
@@ -47,16 +50,28 @@ body{
 .contact-container .social-medias a i{
     padding:0 10px;
 }
-.contact-container a,i{
-    font: 14pt sans-serif;
+.contact-container .contacts a{
+    font: 14pt serif;
+    color: rgb(50, 160, 68);
+}
+.contact-container .contacts a:hover{
+    color: rgb(236, 160, 17);
+}
+.contact-container .social-medias i{
+    font-size: 14pt;
+    color: rgb(50, 160, 68);
+}
+.contact-container .social-medias i:hover{
+    color: rgb(236, 160, 17);
 }
 /*styling for navigation bar*/
 nav{
-    position: sticky;
+    position: static;
     display: block;
     height: auto;
-    background-color: rgb(12, 3, 48);
+    background-color: rgb(50, 160, 68);
     top: 0;
+    margin-bottom: 20px;
     z-index: 100;
 }
 nav .wrapper{
@@ -76,6 +91,7 @@ nav .wrapper .nav-links{
     display: inline;
     float: right;
     padding: 10px;
+    padding-right: 0;
 }
 nav .wrapper .nav-links a{
     text-decoration: none;
@@ -86,31 +102,37 @@ nav .wrapper .nav-links a{
 }
 
 nav .wrapper .nav-links a:hover{
-    background-color: rgb(19, 14, 37);
+    background-color: rgba(12, 14, 18, .2);
+    border-bottom: 2px solid rgb(236, 160, 17);
+    color: rgb(236, 160, 17);
 }
 /*styling for header*/
 header{
     position: relative;
-    height: 500px;
-    background-color: rgb(19, 14, 37);
+    height: 90vh;
+    /*background-color: rgb(19, 14, 37);*/
+    background-image: linear-gradient(rgba(19,14,37,.6),rgba(19,14,37,.6)),url(../images/image6.jpg);
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: center;
+    background-size: cover;
     text-align: center;
     color: aliceblue;
 }
 
 header .scrollDownBtn a{
     position: absolute;
-    bottom: 15px;
+    bottom: 40px;
     left: 50%;
-    color: white;
+    color: rgb(236, 160, 17);
     border: 1px solid;
     padding: 15px;
     border-radius: 50%;
     text-align: center;
 }
-
+header .scrollDownBtn a:hover{
+    color: rgb(50, 160, 68);
+}
 
 
 /* styling for main part*/
@@ -180,7 +202,7 @@ main{
 .top-banner .context ul li h4{
     display: inline;
     padding: 8px;
-    color: darkgoldenrod
+    color: darkgoldenrod;
 }
 /*.container .context ul li::before{
     position: absolute;
@@ -191,6 +213,8 @@ main{
     background: rgb(19, 14, 37);
 }*/
 .services{
+    width: 90%;
+    margin: 0 auto;
     position: relative;
     text-align: center;
     padding: 4px 20px;
@@ -203,7 +227,7 @@ main{
 .services .block{
     position: relative;
     display: inline-block;
-    width: 400px;
+    width: 30%;
     height: auto;
     margin: 10px;
     background: rgb(100, 100, 100);
@@ -234,6 +258,72 @@ main{
     color: white;
     border: 1px solid rgb(19, 14, 37);
 }
+/*styling for question and answer part*/
+.container .reason{
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px black;
+}
+.container .reason .question{
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    top: 50px;
+    background-color: rgb(19, 14, 37);
+    z-index: 99;
+    height: 110px;
+}
+.container .reason .question h2{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.container .reason .question::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: -30px;
+    top: 25px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: rgb(19, 14, 37);
+    float: left;
+    z-index: 0;
+}
+.container .reason .answer{
+    position: relative;
+    padding: 10px;
+    margin-left: 70px;
+}
+.container .reason .answer ul li{
+    list-style: none;
+    padding: 10px;
+    background-color: lightgrey;
+    color: rgb(19, 14, 37);
+    margin: 4px 0;
+}
+.container .rational{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial Black';
+    font-style: italic;
+    line-height: 1.5;
+    padding: 20px;
+}
+.container .rational h3{
+    font-size: 150%;
+}
+.container .rational p{
+    font-size: 110%;
+}
+
+/*styling for prices part*/
 .prices{
     display: flex;
     flex-direction: column;
@@ -282,20 +372,17 @@ main{
     text-align: left;
     margin-bottom: 20px;
 }
-.prices .card-container .block table tr:nth-child(odd){
-    color: goldenrod;
-}
 .prices .card-container .block table th,td{
-    padding: 0 6px;
-    font-size: 90%;
+    padding: 4;
 }
 .prices .card-container .block table td{
     padding-left: 10px;
 }
 .prices .card-container .block table i{
     text-align: center;
-    width: 20px;
+    padding: 8px;
     color: rgb(35, 48, 223);
+    font-size: 8pt;
 }
 .prices .card-container .block table .price{
     color: rgb(35, 48, 223)
