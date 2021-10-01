@@ -1,0 +1,39 @@
+/*styling for sec-nav-bar*/
+header .sec-nav-bar{
+    position: relative;
+    display: block;
+    margin: 20vh auto;
+}
+header .sec-nav-bar h1{
+    padding: 20px;
+}
+header .sec-nav-bar .sec-nav-links{
+    display: block;
+    margin: 5vh auto;
+}
+/*header .sec-nav-bar .sec-nav-links span{
+    width: 0;
+    z-index: -99;
+    padding: 10px;
+    border-radius: 18px;
+    
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}*/
+header .sec-nav-bar .sec-nav-links a{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    margin: 4px;
+    color: rgb(60, 197, 106);
+    border: 1px solid rgb(60, 197, 106);
+    border-radius: 18px;
+    font-weight: bold; 
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;  
+}
+
+header .sec-nav-bar .sec-nav-links a:hover{
+    color: white;
+    background-color: rgb(60, 197, 106);
+}
