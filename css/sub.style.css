@@ -58,5 +58,21 @@ header .sec-nav-bar .sec-nav-links a:hover{
   border-bottom: 1px solid grey;
   margin: 6px 0;
   background-color: whitesmoke;
-  line-height: 1.5px;
+  line-height: 1.5;
+}
+.content-wrapper .service h2{
+  color: rgb(39, 99, 59);
+  text-align: center;
+}
+.content-wrapper .service p{
+  position: relative;
+  padding-left: 20px; 
+}
+.content-wrapper .service p::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: rgb(39, 99, 59);
+  width: 2px;
+  height: 100%;
 }
