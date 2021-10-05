@@ -17,7 +17,7 @@ function scroll() {
     logo.innerText = 'Zulu Fastnet  Solutions';
     logo.style.position = 'relative';
     logo.style.left = '0';
-    logo.style.top = '0';
+    logo.style.top = '10px';
     logo.style.color = 'white';
   }
 }
