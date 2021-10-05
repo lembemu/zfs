@@ -1,14 +1,23 @@
-const backTopBtn = $('.back-top');
-$(window).scroll(function(){
-  if($(document).scrollTop()>400){
-    backTopBtn.css('visibility','visible');
-  } else if ($(document).scrollTop()<400){
-    backTopBtn.css('visibility','hidden');
-  }
-});
+const logo = document.querySelector('.logo h1'),
+  body = document.querySelector('body'),
+  nav = document.querySelector('nav');
+body.style.position = 'relative';
+top = body.style.top;
 
-backTopBtn.click(function(){
-  $('html').animate({
-    scrollTop: 0
-  }, 1000)
-})
+function scroll() {
+  if (scrollY) {
+    logo.innerText = 'ZFS';
+    logo.style.display = 'inline';
+    logo.style.position = 'absolute';
+    logo.style.left = '0';
+    logo.style.top = '10px';
+    logo.style.color = '#1c783f';
+    logo.style.transition = 'all  2s';
+  } else if (scrollBy) {
+    logo.innerText = 'Zulu Fastnet  Solutions';
+    logo.style.position = 'relative';
+    logo.style.left = '0';
+    logo.style.top = '0';
+    logo.style.color = 'white';
+  }
+}

@@ -54,25 +54,70 @@ header .sec-nav-bar .sec-nav-links a:hover{
 .content-wrapper .service{
   display: block;
   position: relative;
-  padding: 20px;
-  border-bottom: 1px solid grey;
+  padding: 10px 20px;
   margin: 6px 0;
   background-color: whitesmoke;
   line-height: 1.5;
 }
+.content-wrapper .service:target{
+  position: relative;
+  top: 0;
+  box-shadow: 0 0 12px #000;
+  transition: all 2s;
+}
 .content-wrapper .service h2{
-  color: rgb(39, 99, 59);
   text-align: center;
+  color: #1C783F;
 }
 .content-wrapper .service p{
   position: relative;
-  padding-left: 20px; 
+  padding-left: 30px;
+  margin: 6px 0;
+}
+.content-wrapper .service p::first-letter{
+  color: #1C783F;
+  font-size: 14pt;
 }
 .content-wrapper .service p::before{
   content: "";
   position: absolute;
-  left: 0;
-  background-color: rgb(39, 99, 59);
   width: 2px;
   height: 100%;
+  background-color: #1C783F;
+  left: 0;
+}
+.content-wrapper .service img{
+  display: inline;
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+
+
+
+@media screen and (max-width: 360px) {
+  .content-wrapper .service img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* styling for about.html page*/
+.content-wrapper .about{
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  margin: 8px 0;
+  background-color: whitesmoke;
+}
+.content-wrapper .about .heading{
+  border: transparent;
+  border-top: 2px solid grey;
+  text-align: center;
+}
+.content-wrapper .about .heading legend{
+  color: #1C783F;
+  padding: 4px 10px;
 }
