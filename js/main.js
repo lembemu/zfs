@@ -11,13 +11,11 @@ function scroll() {
     logo.style.position = 'absolute';
     logo.style.left = '0';
     logo.style.top = '10px';
-    logo.style.color = '#1c783f';
-    logo.style.transition = 'all  1s';
+    logo.style.transition = 'all  .5s';
   } else if (scrollBy) {
     logo.innerText = 'Zulu Fastnet  Solutions';
     logo.style.position = 'relative';
     logo.style.left = '0';
     logo.style.top = '10px';
-    logo.style.color = 'white';
   }
 }
