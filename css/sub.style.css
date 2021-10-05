@@ -69,7 +69,15 @@ header .sec-nav-bar .sec-nav-links a:hover{
   text-align: center;
   color: #1C783F;
 }
+.content-wrapper .service .context{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px;
+}
 .content-wrapper .service p{
+  display: block;
+  width: 100%;
   position: relative;
   padding-left: 30px;
   margin: 6px 0;
@@ -86,22 +94,30 @@ header .sec-nav-bar .sec-nav-links a:hover{
   background-color: #1C783F;
   left: 0;
 }
+.content-wrapper .service .images{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .content-wrapper .service img{
-  display: inline;
-  width: 20%;
-  height: auto;
+  display: inline-block;
+  width: 50%;
+  height: 400px;
   float: left;
+
+}
+.content-wrapper #email{
+  color: rgb(199, 61, 61);
+  border-color: rgb(199, 61, 61);
+}
+.content-wrapper #email:hover{
+  background-color: rgb(199, 61, 61);
+  border-color: rgb(199, 61, 61);
+  color: #fff;
 }
 
 
-
-
-@media screen and (max-width: 360px) {
-  .content-wrapper .service img{
-    width: 100%;
-    height: auto;
-  }
-}
 
 
 /* styling for about.html page*/
@@ -120,4 +136,27 @@ header .sec-nav-bar .sec-nav-links a:hover{
 .content-wrapper .about .heading legend{
   color: #1C783F;
   padding: 4px 10px;
+}
+
+
+
+@media screen and (max-width: 360px) {
+  .content-wrapper .service img{
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-wrapper .service img{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .content-wrapper .service img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
 }
