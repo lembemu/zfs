@@ -128,6 +128,12 @@ header .sec-nav-bar .sec-nav-links a:hover{
   margin: 8px 0;
   background-color: whitesmoke;
 }
+.content-wrapper .about:target{
+  position: relative;
+  top: 0;
+  box-shadow: 0 0 12px #000;
+  transition: all 2s;
+}
 .content-wrapper .about .heading{
   border: transparent;
   border-top: 2px solid grey;

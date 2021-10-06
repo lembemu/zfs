@@ -18,6 +18,24 @@ body{
  a{
      text-decoration: none;
  }
+ /*styling for back-top-btn*/
+ .back-top-btn{
+   position: fixed;
+   right: 15px;
+   bottom: 10px;
+   background-color: rgb(36, 133, 68);
+   color: #fff;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 50%;
+   box-shadow: 0 3px 4px #000;
+   text-align: center;
+   cursor: pointer;
+   visibility: hidden;
+   font-size: 18pt;
+   z-index: 99;
+ }
 /*styling for contact-container elements*/
 .contact-container{
     display: block;
@@ -71,7 +89,7 @@ nav{
     display: block;
     position: sticky;
     height: auto;
-    background-color: rgba(12,14,17,.4);
+    background-color: rgb(22,12,31);
     top: 0;
     z-index: 100;
 }
@@ -100,12 +118,14 @@ nav .wrapper .nav-links a{
     font-size: 14pt;
     font-weight: 500;
     padding: 10px;
+    
 }
 
 nav .wrapper .nav-links a:hover{
     color: rgb(60, 197, 106);
     border-bottom: 2px solid ;
     background-color: rgba(12,14,17,.2);
+   
 }
 /*styling for header*/
 header{
