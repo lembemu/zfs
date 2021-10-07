@@ -34,4 +34,10 @@ back_top_btn.click(function() {
     scrollTop:0
   },1000);
   return false;
+});
+
+var viewBtn = $('.view-img'), logos = $('.logos');
+viewBtn.click(function(){
+  logos.addClass('show');
+  viewBtn.hide();
 })

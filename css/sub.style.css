@@ -116,8 +116,19 @@ header .sec-nav-bar .sec-nav-links a:hover{
   border-color: rgb(199, 61, 61);
   color: #fff;
 }
-
-
+.content-wrapper .service .logos{
+  display: none;
+}
+.content-wrapper .service .logos img{
+  padding: 10px;
+  border: 1px solid grey;
+}
+.content-wrapper .service .show{
+  display: block;
+}
+.content-wrapper .service ol,ul{
+  padding-left: 40px;
+}
 
 
 /* styling for about.html page*/
