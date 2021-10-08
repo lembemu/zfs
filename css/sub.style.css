@@ -58,6 +58,7 @@ header .sec-nav-bar .sec-nav-links a:hover{
   margin: 6px 0;
   background-color: whitesmoke;
   line-height: 1.5;
+  border-bottom: 1px solid rgb(34, 124, 64); 
 }
 .content-wrapper .service:target{
   position: relative;
