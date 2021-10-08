@@ -127,6 +127,12 @@ nav .wrapper .nav-links a:hover{
     background-color: rgba(12,14,17,.2);
    
 }
+nav .wrapper .nav-links a.active{
+    color: rgb(60, 197, 106);
+    border-bottom: 2px solid ;
+    background-color: rgba(12,14,17,.2);
+   
+}
 /*styling for header*/
 header{
     display: flex;
