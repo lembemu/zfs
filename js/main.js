@@ -18,7 +18,7 @@ $(window).scroll(function(){
   back_top_btn.css('visibility', 'visible');
   logo.css(style);
   logo.text('ZFS');
-  nav.css('background-color','rgba(22,12,31,.8)')
+  nav.css('background-color','rgba(22,12,31,.876)')
   }
   if ($(document).scrollTop() < 400) {
     back_top_btn.css('visibility','hidden');
@@ -41,3 +41,9 @@ viewBtn.click(function(){
   logos.addClass('show');
   viewBtn.hide();
 })
+
+
+var date = new Date();
+var year = date.getFullYear()
+document.getElementById('date').innerText = year;
+

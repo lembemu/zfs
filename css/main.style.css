@@ -147,6 +147,8 @@ header{
     color: aliceblue;
 }
 header .first-banner{
+    /*display: flex;
+    flex-direction: column;*/
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -156,13 +158,14 @@ header .first-banner{
 header .first-banner #logo{
     display: block;
     position: relative;
-    width: 65%;
-    height: 70%;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    top: 5vh;
 }
 header .scrollDownBtn a{
     position: absolute;
-    bottom: 60px;
+    bottom: 100px;
     left: 45%;
     color: white;
     border: 1px solid;
@@ -526,7 +529,11 @@ footer .copyright p{
         display: block;
     }
     header .first-banner{
-        width: 100%;
+        width: 60%;
+    }
+    header .first-banner #logo{
+      width: 100%;
+      height: auto;
     }
     .container .reason{
         display: block;

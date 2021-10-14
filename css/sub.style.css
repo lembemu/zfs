@@ -166,12 +166,15 @@ header .sec-nav-bar .sec-nav-links a:hover{
 }
 .content-wrapper .about .heading{
   border: transparent;
-  border-top: 2px solid grey;
+  border-top: 1px solid #1C783F;
   text-align: center;
 }
 .content-wrapper .about .heading legend{
   color: #1C783F;
   padding: 4px 10px;
+}
+.content-wrapper .about .heading legend h2{
+  font-weight: 400;
 }
 
 
