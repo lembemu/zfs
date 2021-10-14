@@ -106,7 +106,7 @@ header .sec-nav-bar .sec-nav-links a:hover{
   width: 50%;
   height: 400px;
   float: left;
-
+  padding: 30px;
 }
 .content-wrapper #email{
   color: rgb(199, 61, 61);
@@ -119,9 +119,6 @@ header .sec-nav-bar .sec-nav-links a:hover{
 }
 .content-wrapper .service .logos{
   display: none;
-}
-.content-wrapper .service .logos img{
-  padding: 10px;
 }
 .content-wrapper .service .show{
   display: block;
